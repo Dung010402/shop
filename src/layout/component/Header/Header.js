@@ -21,7 +21,7 @@ function Header() {
         <div>
             <header className={cx('wrapper')}>
                 <div className={cx('inner')}>
-                    <Link to="/" className={cx('logo')}>
+                    <Link to={`/`} className={cx('logo')}>
                         <img className={cx('logo-image')} src={images.logo} alt="shop" />
                     </Link>
                     <div className={cx('search')}>
@@ -32,13 +32,13 @@ function Header() {
                     </div>
                     <div className={cx('action')}>
                         <Tippy delay={[0, 0]} content="Trợ giúp" placement="bottom">
-                            <Link to="/support" className={cx('action-btn')}>
+                            <Link to="/support" className={cx('action-btn', 'support')}>
                                 <FontAwesomeIcon icon={faCircleQuestion} />
                             </Link>
                         </Tippy>
 
                         <Tippy delay={[0, 0]} content="0334099685" placement="bottom">
-                            <button className={cx('action-btn')}>
+                            <button className={cx('action-btn', 'phone')}>
                                 <FontAwesomeIcon icon={faPhone} />
                             </button>
                         </Tippy>
