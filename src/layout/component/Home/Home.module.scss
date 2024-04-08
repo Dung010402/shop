@@ -82,3 +82,12 @@
     color: var(--text-gray);
     font-size: 1.2rem;
 }
+//Tablet
+@media only screen and (min-width: 46.25em) and (max-width: 65.25em) {
+    .wrapper {
+        padding: 0 30px;
+    }
+}
+//Mobile
+@media only screen and (max-width: 46.25em) {
+}
