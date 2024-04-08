@@ -61,3 +61,27 @@
         cursor: pointer;
     }
 }
+
+//Tablet
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .wrapper {
+        padding: 0 30px;
+    }
+}
+
+//Mobile
+@media only screen and (max-width: 46.25em) {
+    .wrapper {
+        padding: 0 10px;
+    }
+    .list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item-name {
+        font-size: 1.2rem;
+    }
+    .copyright {
+        font-size: 1.3rem;
+    }
+}

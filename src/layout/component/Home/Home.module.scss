@@ -82,12 +82,35 @@
     color: var(--text-gray);
     font-size: 1.2rem;
 }
+
 //Tablet
-@media only screen and (min-width: 46.25em) and (max-width: 65.25em) {
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
     .wrapper {
         padding: 0 30px;
     }
+    .title {
+        font-size: 1.5rem;
+    }
+    .more {
+        font-size: 1.3rem;
+    }
+    .inner--item {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
+
 //Mobile
 @media only screen and (max-width: 46.25em) {
+    .wrapper {
+        padding: 0 10px;
+    }
+    .title {
+        font-size: 1.4rem;
+    }
+    .more {
+        font-size: 1.3rem;
+    }
+    .inner--item {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

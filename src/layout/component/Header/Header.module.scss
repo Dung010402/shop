@@ -121,12 +121,25 @@
     }
 }
 
+//Tablet
 @media only screen and (min-width: 46.25em) and (max-width: 66.35em) {
     .wrapper {
         padding: 0 30px;
     }
+    .inner {
+        min-height: 0px;
+    }
+    .logo-image {
+        height: 70px;
+    }
     .search {
         width: 60%;
+    }
+    .search-btn {
+        padding: 10px 26px;
+    }
+    .action-btn {
+        font-size: 1.6rem;
     }
     .support {
         display: none;
