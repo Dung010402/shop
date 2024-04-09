@@ -1,9 +1,7 @@
 .wrapper {
     display: flex;
-    width: 1200px;
-    margin: auto;
+    margin: 0 100px;
     background-color: var(--white);
-    min-height: 696px;
 }
 
 .image {
@@ -66,6 +64,9 @@
 
 .property {
     margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
 }
 
 .coin {
@@ -97,7 +98,6 @@
 .delivery,
 .quantity {
     display: flex;
-    margin: 22px 0;
     align-items: center;
 }
 
@@ -173,4 +173,121 @@
 .btn-add:hover {
     cursor: pointer;
     opacity: 0.9;
+}
+
+//Tablet
+@media only screen and (min-width: 46.25em) and (max-width: 66.35em) {
+    .inner {
+        padding: 25px 10px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+    .vote {
+        font-size: 1.2rem;
+        padding: 16px 0;
+        gap: 0;
+        span {
+            font-size: 1.2rem;
+        }
+    }
+    .property {
+        margin-left: 0;
+    }
+    .coin-after {
+        font-size: 1.9rem;
+    }
+    .coin-discount {
+        font-size: 1.1rem;
+        padding: 1px 2px;
+    }
+
+    .voucher-title,
+    .color-title,
+    .delivery-title,
+    .quantity-title {
+        font-size: 1.4rem;
+    }
+    .voucher,
+    .color,
+    .delivery,
+    .quantity {
+        margin: 16px 0;
+    }
+    .btn-add,
+    .btn-buy {
+        min-width: 0;
+        width: 40%;
+        padding: 12px;
+    }
+}
+
+//Mobile
+@media only screen and (max-width: 46.25em) {
+    .wrapper {
+        display: block;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    .image {
+        width: 100%;
+        padding: 0;
+    }
+    .inner {
+        padding: 0px;
+    }
+    .title {
+        padding: 0 10px;
+        margin-top: 10px;
+        font-size: 1.6rem;
+    }
+    .vote {
+        padding: 10px;
+        span {
+            font-size: 1.4rem;
+        }
+    }
+    .property {
+        margin-left: 0;
+        gap: 10px;
+        padding: 0 10px;
+    }
+    .coin-before {
+        font-size: 1.6rem;
+    }
+    .coin-after {
+        font-size: 1.8rem;
+    }
+    .coin-discount {
+        font-size: 1.1rem;
+    }
+    .voucher-title,
+    .color-title,
+    .delivery-title,
+    .quantity-title {
+        font-size: 1.4rem;
+    }
+    .voucher-child {
+        font-size: 1.3rem;
+    }
+    .color-types {
+        padding: 6px 16px;
+    }
+    .action {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin-left: -10px;
+        gap: 0;
+    }
+    .btn-add,
+    .btn-buy {
+        min-width: 0;
+        width: 50%;
+        border-radius: 0;
+    }
+    .btn-add {
+        background-color: var(--white);
+    }
 }

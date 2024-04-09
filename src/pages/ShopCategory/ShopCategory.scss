@@ -56,3 +56,34 @@
     color: var(--text-gray);
     font-size: 1.2rem;
 }
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .wrapper {
+        padding: 0 30px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .more {
+        font-size: 1.3rem;
+    }
+    .inner--item {
+    }
+}
+
+//Mobile
+@media only screen and (max-width: 46.25em) {
+    .wrapper {
+        padding: 0 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .title {
+        font-size: 1.4rem;
+    }
+    .more {
+        font-size: 1.3rem;
+    }
+    .inner--item {
+    }
+}

@@ -6,7 +6,7 @@ import ShopCategory from './pages/ShopCategory/ShopCategory';
 function App() {
     return (
         <Router>
-            <div className="App" style={{ borderRadius: '0px' }}>
+            <div className="App" style={{ borderRadius: '0px', backgroundColor: '#efefef' }}>
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         const Layout = route.layout === null ? Fragment : DefaultLayout;
