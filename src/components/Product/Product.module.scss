@@ -40,12 +40,11 @@
     font-weight: 500;
     border-bottom: 1px solid var(--gray);
     div {
-        flex: 1;
-        display: flex;
         justify-content: space-around;
-        align-items: center;
+        // align-items: center;
         input[type='checkbox'] {
-            margin: 0 16px 0px 46px;
+            margin: auto 16px auto 46px;
+
             width: 16px;
             height: 16px;
             border: 0.5px solid #eeeded;
@@ -56,6 +55,16 @@
     }
 }
 
+.item-image {
+    display: flex;
+}
+
+.inner {
+    display: flex;
+    width: 50%;
+    // flex: 1;
+}
+
 .image {
     margin-right: 16px;
     width: 80px;
@@ -63,10 +72,59 @@
 }
 
 .property {
+    flex: 1;
+    display: inline-block;
+    width: 30%;
+    height: 34px;
     font-size: 1.5rem;
     font-weight: 500;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
-
+.unit--coin {
+    color: var(--primary);
+}
 .coin {
     color: var(--primary);
+}
+
+//Mobile
+@media only screen and (max-width: 46.25em) {
+    .shop {
+        input[type='checkbox'] {
+            margin-left: 22px;
+        }
+    }
+    .item {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .item {
+        div {
+            input[type='checkbox'] {
+                margin-left: 22px;
+            }
+        }
+    }
+    .property {
+        width: 100%;
+        grid-column: 2;
+        margin-top: -30px;
+    }
+    .inner {
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+        gap: 10px;
+        grid-column: 2;
+    }
+    .coin,
+    .action {
+        display: none;
+    }
 }

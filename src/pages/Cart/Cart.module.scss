@@ -1,13 +1,11 @@
 .wrapper {
     background-color: var(--background-color);
-    min-height: 1000px;
 }
 .header {
     border-bottom: 1px solid var(--gray);
     background-color: var(--white);
 }
 .inner {
-    width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -64,8 +62,7 @@
 
 .container {
     position: relative;
-    width: 1200px;
-
+    width: 90%;
     margin: auto;
 }
 
@@ -147,7 +144,7 @@
     align-items: center;
     justify-content: space-between;
     bottom: 0;
-    width: 1200px;
+    width: 90%;
     padding: 15px 0;
     font-size: 1.5rem;
     background-color: var(--white);
@@ -181,5 +178,81 @@
         height: 1.25rem;
         width: 100%;
         background: linear-gradient(transparent, rgba(202, 202, 202, 0.04));
+    }
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 66.35em) {
+    .inner {
+        width: auto;
+    }
+    .logo-img {
+        img {
+            width: 110px;
+            height: 40px;
+        }
+    }
+    .container {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 66.35em) {
+    .operation {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 46.25em) {
+    .header {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .inner {
+        width: auto;
+        min-height: 80px;
+    }
+    .input {
+        display: none;
+    }
+    .logo-img {
+        img {
+            width: 100px;
+            height: 34px;
+        }
+    }
+    .title {
+        font-size: 1.8rem;
+    }
+    .container {
+        margin-top: 80px;
+        width: auto;
+    }
+    .container--title {
+        display: none;
+    }
+    .operation {
+        display: flex;
+        font-size: 1.3rem;
+        margin-right: 10px;
+        width: 100%;
+        div {
+            display: flex;
+            align-items: center;
+        }
+        input[type='checkbox'] {
+            margin: auto 16px auto 22px;
+        }
+        button {
+            padding: 12px 22px;
+            margin-right: 10px;
+        }
+        span {
+            margin-right: 10px;
+        }
+    }
+    .action {
+        display: none;
     }
 }

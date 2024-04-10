@@ -7,6 +7,7 @@ import { faComments } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 function Product({ data }) {
+    const coin = data.coinsAfter * 1;
     return (
         <div className={cx('wrapper')}>
             <div className={cx('shop')}>
@@ -17,16 +18,15 @@ function Product({ data }) {
                 </Link>
             </div>
             <div className={cx('item')}>
-                <div>
+                <div className={cx('item-image')}>
                     <input type="checkbox" />
-
                     <img className={cx('image')} src={data.imageMain} alt={data.nickNameShop} />
-                    <div className={cx('property')}>{data.title}</div>
                 </div>
-                <div>
+                <div className={cx('property')}>{data.title}</div>
+                <div className={cx('inner')}>
                     <div className={cx('unit--coin')}>{data.coinsAfter}.000đ</div>
-                    <div className={cx('quantity')}>3</div>
-                    <div className={cx('coin')}>{data.coins}</div>
+                    <div className={cx('quantity')}>1</div>
+                    <div className={cx('coin')}>{coin}.000đ</div>
                     <div className={cx('action')}>Xóa</div>
                 </div>
             </div>

@@ -47,7 +47,7 @@ function Cart() {
                     <div>
                         <input type="checkbox" />
                         <span>Chọn tất cả</span>
-                        <span>Xóa</span>
+                        <span className={cx('action')}>Xóa</span>
                     </div>
                     <div>
                         <span>Tổng thanh toán:</span>

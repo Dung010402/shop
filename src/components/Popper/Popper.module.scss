@@ -1,9 +1,16 @@
 .wrapper {
     display: flex;
+
     flex-direction: column;
     min-width: 100px;
     background-color: var(--white);
     box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
     border-radius: 2px;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 46.25em) {
+    .wrapper {
+        width: 100%;
+    }
 }

@@ -45,7 +45,7 @@ function Header() {
 
                         <HeadlessTippy
                             interactive
-                            placement="bottom"
+                            placement="bottom-end"
                             delay={[100, 200]}
                             render={() => (
                                 <PopperWrapper>
@@ -73,9 +73,9 @@ function Header() {
                                 </PopperWrapper>
                             )}
                         >
-                            <button className={cx('action-btn')}>
+                            <Link to={`/cart`} className={cx('action-btn')}>
                                 <FontAwesomeIcon icon={faBagShopping} />
-                            </button>
+                            </Link>
                         </HeadlessTippy>
                     </div>
                 </div>
